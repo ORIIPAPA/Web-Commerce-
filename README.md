@@ -4,11 +4,11 @@ A personal responsive portfolio website for showcasing my skills, services, and 
 
 ## 🌐 Live Demo
 
-[Click here to view](https://oriipapa.github.io/Web-Commerce-/)
+[Click here to view](https://dulcet-creponne-edede7.netlify.app/)]
 
 ## 📸 Screenshot
 
-![Screenshot](images/screenshot.png)
+![Screenshot](screenshot.png)
 
 ## 🚀 Features
 
