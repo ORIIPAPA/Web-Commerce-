@@ -8,7 +8,7 @@ A personal responsive portfolio website for showcasing my skills, services, and 
 
 ## 📸 Screenshot
 
-![Screenshot](screenshot.png)
+![Screenshot](Screenshot.png)
 
 ## 🚀 Features
 
