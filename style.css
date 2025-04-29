@@ -1,0 +1,393 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color:lightslategray;
+    color: #333;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 0;
+  }
+  /* Header */
+.header {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    border-bottom: 1px solid #ddd;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #00b894;
+  }
+  
+  .navbar {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+  }
+  
+  .nav-icons {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+  }
+  
+  .nav-icons i {
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  
+  /* Buttons */
+  .btn,
+  .btn-outline {
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-right: 10px;
+  }
+  
+  .btn {
+    background-color: #00b894;
+    color: #fff;
+    border: none;
+  }
+  
+  .btn-outline {
+    background-color: transparent;
+    color: #00b894;
+    border: 2px solid #00b894;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: url('images/abstract.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 80px 0;
+    position: relative;
+  }
+  
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.5); /* dark overlay for text contrast */
+    z-index: 0;
+  }
+  
+  .hero .container {
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  }
+
+  .hero-content{
+    flex: 1;
+    min-width: 300px; 
+  }
+  
+  
+  .hero-image {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .hero h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  .hero h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #00b894;
+  }
+  
+  .hero p {
+    margin-bottom: 20px;
+  }
+  
+  /* About Section */
+  .about {
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+  
+  .about-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  .about-image,
+  .about-content {
+    flex: 1;
+  }
+  
+  .about-content h2 {
+    margin: 15px 0;
+  }
+  
+  .about-content .contact-info p {
+    margin: 5px 0;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .social-icons a {
+    text-decoration: none;
+    color: white;
+    background: #00b894;
+    padding: 10px 12px;
+    margin-right: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    transition: 0.3s;
+  }
+  
+  .social-icons a:hover {
+    background: #019170;
+  }
+  
+  .social-icons i {
+    font-size: 16px;
+  }
+  
+  
+  /* Services Section */
+  .services {
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .section-title {
+    font-size: 24px;
+    color: #00b894;
+    margin-bottom: 10px;
+  }
+  
+  .section-heading {
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+  
+  .services-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  .service-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+  }
+  
+  
+  .service-card {
+    background-color: #fff;
+    padding: 20px;
+    width: 300px;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .more-link {
+    display: inline-block;
+    margin-top: 20px;
+    color: #00b894;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  /* Skills Section */
+  .skills-section {
+    margin-top: 60px;
+  }
+  
+  .skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+  
+  .skills-column {
+    flex: 1;
+    min-width: 250px;
+  }
+  
+  .skill-item {
+    margin-bottom: 20px;
+  }
+  
+  .skill-info {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .skill-bar {
+    background-color: #ddd;
+    height: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .skill-progress {
+    background-color: #00b894;
+    height: 10px;
+    transition: width 1s ease-in-out;
+  }
+  
+  /* Stats Section */
+  .stats {
+    background-color: #fff;
+    padding: 60px 0;
+    text-align: center;
+  }
+  
+  .stats-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 40px;
+  }
+  
+  .stat-item h3 {
+    font-size: 32px;
+    color: #00b894;
+  }
+  
+  .stat-item p {
+    margin-top: 5px;
+  }
+  
+  .success-heading {
+    margin-bottom: 30px;
+    font-size: 28px;
+  }
+  
+  .work-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .work-item {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 8px;
+  }
+  
+  .work-overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+  }
+  
+  .footer-content {
+    margin-bottom: 10px;
+  }
+  
+  .footer-logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #00b894;
+  }
+  
+  .footer-contact a {
+    display: block;
+    color: #fff;
+    margin: 5px 0;
+    text-decoration: none;
+  }
+  .footer-social {
+    margin-top: 15px;
+  }
+  
+  .footer-social a {
+    display: inline-block;
+    margin: 0 8px;
+    color: #fff;
+    background-color: #00b894;
+    padding: 10px;
+    border-radius: 50%;
+    transition: 0.3s;
+  }
+  
+  .footer-social a:hover {
+    background-color: #019170;
+  }
+  
+  .footer-social i {
+    font-size: 16px;
+  }
+  
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .hero,
+    .about-container,
+    .skills-container,
+    .services-grid,
+    .stats-grid,
+    .work-gallery {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .hero-content,
+    .hero-image,
+    .about-image,
+    .about-content,
+    .skills-column {
+      width: 100%;
+      padding: 10px;
+    }
+  }
+  
